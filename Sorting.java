@@ -174,12 +174,12 @@ public class Sorting {
 
             while(leftPointer <= rightPointer) {
                 // left pointer try to find big number
-                while (left < right && arr[leftPointer] < pivot) {
+                while (leftPointer < rightPointer && arr[leftPointer] < pivot) {
                     leftPointer++;
                 }
 
                 // right pointer try to find small number
-                while (right >= left && arr[rightPointer] >= pivot) {
+                while (rightPointer >= leftPointer && arr[rightPointer] >= pivot) {
                     rightPointer--;
                 }
 
